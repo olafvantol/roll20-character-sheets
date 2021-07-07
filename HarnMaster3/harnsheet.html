@@ -6,6 +6,11 @@
 	<button type="action" name="act_dismissupgradenotice" class="dismissnotification">Dismiss notification</button>
 </div>
 
+<div class=avatarbanner>
+	<!-- <img class='bannerimage' src="https://github.com/olafvantol/roll20-character-sheets/blob/657c85c95697ed56ccaac4611ab25732fc021106/HarnMaster3/scroll-wide.png?raw=true" /> -->
+	<img class='avatarimage' name='attr_character_avatar'>
+</div>
+
 <!-- buttons to select desired tab -->
 <div class="tab-buttons">
    <button id=chartab type="action" name="act_character" >Character<span class="buttonicon">&nbsp;U </span></button>
@@ -21,8 +26,9 @@
 
 <!-- actual character sheet, divided in tabs -->
 <div class='character'> <!-- CHARACTER TAB -->
-	<div><img src="https://github.com/olafvantol/roll20-character-sheets/blob/130ece377656e6e15268fe0b47fcaf98a911d074/HarnMaster3/scroll%20wide.png?raw=true" /></div>
-    <h1>HarnMaster Character Profile</h1>
+
+	<h2 class='tab-header'>HarnMaster</h2>
+    <h1 class='tab-header'>Character Profile</h1>
     <div class='character-grid'> <!-- CHARACTER grid container-->
         <div class='character-grid-section personal personal-grid'>
     		<div class="skill-section-title">PERSONAL</div>
@@ -1060,7 +1066,8 @@
 </div>
 
 <div class='inventory'> <!-- INVENTORY TAB -->
-   <h1>HarnMaster Character Inventory</h1>
+   <h2 class='tab-header'>HarnMaster</h2>
+   <h1 class='tab-header'>Character Inventory</h1>
    <div class='inventory-grid'> <!-- grid container-->
     <div class='inventory-grid-section inven-weapons weapons-grid colored-grid'>
 		<div class="skill-section-title">MELEE WEAPONS</div>
@@ -1493,7 +1500,8 @@
 </div>
 
 <div class='settings'> <!-- SETTINGS TAB -->
-	<h1>Character Sheet settings</h1><!-- TODO add tooltips to clarify settings -->
+	<h2 class='tab-header'>Character Sheet</h2>
+	<h1 class='tab-header'>Settings</h1><!-- TODO add tooltips to clarify settings -->
 	<div class='settings-grid'> <!-- grid container-->
     	<div class='settings-grid-section settingsgroup colored-grid'>
     	    <div class="skill-section-title">Houserules</div> 
