@@ -699,7 +699,7 @@
     				<input type="number" name="attr_weapon_atk" class="skill-value" readonly>
     				<input type="number" name="attr_weapon_def" class="skill-value" readonly>
     				<input type="number" name="attr_weapon_hm" class="skill-value" readonly>
-    				<button type="roll" class="harntooltip" value="&{template:custom} {{color=harn}} {{title=@{character_name} attacks with a @{weapon_name}}} {{subtitle=With HM penalty}} {{rolltarget=[[{[[{[[@{weapon_aml} + @{weapon_hm} - [[(@{physical_penalty})*5]] + ?{Target Modifier?|0}]],5}kh1]],95}kl1]]}} {{Mastery Lvl=[[@{weapon_aml}]]}} {{penalty=[[[[(@{physical_penalty})*5]] + [[-1*@{weapon_hm}]]]]}} {{rollresult=[[1d100cs5cs10cs15cs20cs25cs30cs35cs40cs45cs50cs55cs60cs65cs70cs75cs80cs85cs90cs95cs100]]}} {{Modifier=[[?{Target Modifier?|0}]]}} {{desc=B(@{weapon_b}) E(@{weapon_e}) P(@{weapon_p}) F(@{weapon_f})}}" name="roll_weaponhmamlcheck" data-tooltiptext="Use this button to roll attack with included HM penalty">
+    				<button type="roll" value="&{template:custom} {{color=harn}} {{title=@{character_name} attacks with a @{weapon_name}}} {{subtitle=With HM penalty}} {{rolltarget=[[{[[{[[@{weapon_aml} + @{weapon_hm} - [[(@{physical_penalty})*5]] + ?{Target Modifier?|0}]],5}kh1]],95}kl1]]}} {{Mastery Lvl=[[@{weapon_aml}]]}} {{penalty=[[[[(@{physical_penalty})*5]] + [[-1*@{weapon_hm}]]]]}} {{rollresult=[[1d100cs5cs10cs15cs20cs25cs30cs35cs40cs45cs50cs55cs60cs65cs70cs75cs80cs85cs90cs95cs100]]}} {{Modifier=[[?{Target Modifier?|0}]]}} {{desc=B(@{weapon_b}) E(@{weapon_e}) P(@{weapon_p}) F(@{weapon_f})}}" name="roll_WeaponHMAMLSkillCheck" data-tooltiptext="Use this button to roll attack with included HM penalty">
     				</button>
     				<input type="number" name="attr_weapon_b" class="skill-value" readonly>
     				<input type="number" name="attr_weapon_e" class="skill-value" readonly>
@@ -707,10 +707,10 @@
     				<input type="number" name="attr_weapon_f" class="skill-value" readonly>
     				<input type="number" name="attr_weapon_ml" class="skill-value" readonly>
     				<input type="number" name="attr_weapon_aml" class="skill-value" readonly>  
-    				<button type="roll"	class="harntooltip" value="&{template:custom} {{color=harn}} {{title=@{character_name} attacks with a @{weapon_name}}} {{rolltarget=[[{[[{[[@{weapon_aml} - [[(@{physical_penalty})*5]] + ?{Target Modifier?|0}]],5}kh1]],95}kl1]]}}{{Mastery Lvl=[[@{weapon_aml}]]}} {{penalty=[[(@{physical_penalty})*5]]}} {{rollresult=[[1d100cs5cs10cs15cs20cs25cs30cs35cs40cs45cs50cs55cs60cs65cs70cs75cs80cs85cs90cs95cs100]]}} {{Modifier=[[?{Target Modifier?|0}]]}} {{successdesc=B(@{weapon_b}) E(@{weapon_e}) P(@{weapon_p}) F(@{weapon_f})}}" name="roll_weaponamlcheck" data-tooltiptext="Use this button to roll a normal attack">
+    				<button type="roll"	value="&{template:custom} {{color=harn}} {{title=@{character_name} attacks with a @{weapon_name}}}  {{rolltarget=[[{[[{[[@{weapon_aml} - [[(@{physical_penalty})*5]] + ?{Target Modifier?|0}]],5}kh1]],95}kl1]]}}{{Mastery Lvl=[[@{weapon_aml}]]}}  {{penalty=[[(@{physical_penalty})*5]]}} {{rollresult=[[1d100cs5cs10cs15cs20cs25cs30cs35cs40cs45cs50cs55cs60cs65cs70cs75cs80cs85cs90cs95cs100]]}} {{Modifier=[[?{Target Modifier?|0}]]}} {{successdesc=B(@{weapon_b}) E(@{weapon_e}) P(@{weapon_p}) F(@{weapon_f})}}" name="roll_WeaponAMLSkillCheck" data-tooltiptext="Use this button to roll a normal attack">
     				</button>
     				<input type="number" name="attr_weapon_dml" class="skill-value" readonly>
-    				<button type="roll" value="&{template:custom} {{color=harn}} {{title=@{character_name} blocks with a @{weapon_name}}} {{rolltarget=[[{[[{[[@{weapon_dml} - [[(@{physical_penalty})*5]] + ?{Target Modifier?|0}]],5}kh1]],95}kl1]]}}{{Mastery Lvl=[[@{weapon_dml}}} {{penalty=[[(@{physical_penalty})*5]]}} {{rollresult=[[1d100cs5cs10cs15cs20cs25cs30cs35cs40cs45cs50cs55cs60cs65cs70cs75cs80cs85cs90cs95cs100]]}} {{Modifier=[[?{Target Modifier?|0}]]}} {{desc=wq @{weapon_wq}]]}}" name="roll_weapondmlcheck">
+    				<button type="roll" value="&{template:custom} {{color=harn}} {{title=@{character_name} blocks with a @{weapon_name}}} {{rolltarget=[[{[[{[[@{weapon_dml} - [[(@{physical_penalty})*5]] + ?{Target Modifier?|0}]],5}kh1]],95}kl1]]}}{{Mastery Lvl=[[@{weapon_dml}}}  {{penalty=[[(@{physical_penalty})*5]]}} {{rollresult=[[1d100cs5cs10cs15cs20cs25cs30cs35cs40cs45cs50cs55cs60cs65cs70cs75cs80cs85cs90cs95cs100]]}} {{Modifier=[[?{Target Modifier?|0}]]}} {{desc=wq @{weapon_wq}]]}}" name="roll_WeaponDMLSkillCheck">
     				</button>
     				<input type="text" name="attr_weapon_note" class="skill-label" readonly>
     			</div>
@@ -1105,8 +1105,7 @@
 			<input type="number" name="attr_weapon_f" class="skill-value" value="0">
 			<input type="number" name="attr_weapon_ml" class="skill-value" value="0">
 			<input type="number" name="attr_weapon_aml" class="skill-value" readonly>
-			<button type="roll" class="harntooltip" value="&{template:custom} {{color=harn}} {{title=@{character_name} attacks with a @{weapon_name}}} {{subtitle=With HM penalty}} {{rolltarget=[[{[[{[[@{weapon_aml} + @{weapon_hm} - [[(@{physical_penalty})*5]] + ?{Target Modifier?|0}]],5}kh1]],95}kl1]]}} {{Mastery Lvl=[[@{weapon_aml}]]}} {{penalty=[[[[(@{physical_penalty})*5]] + [[-1*@{weapon_hm}]]]]}} {{rollresult=[[1d100cs5cs10cs15cs20cs25cs30cs35cs40cs45cs50cs55cs60cs65cs70cs75cs80cs85cs90cs95cs100]]}} {{Modifier=[[?{Target Modifier?|0}]]}} {{desc=B(@{weapon_b}) E(@{weapon_e}) P(@{weapon_p}) F(@{weapon_f})}}" name="roll_weaponhmamlcheck" data-tooltiptext="Use this button to roll attack with included HM penalty">
-    				</button>
+			<div>&nbsp;</div>
 			<input type="number" name="attr_weapon_dml" class="skill-value" readonly>
 			<div>&nbsp;</div>
 			<input type="text" name="attr_weapon_note" class="skill-label width-2col">
