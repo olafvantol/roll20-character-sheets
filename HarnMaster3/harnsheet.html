@@ -8,7 +8,7 @@
 
 <div class=avatarbanner>
 	<!-- <img class='bannerimage' src="https://github.com/olafvantol/roll20-character-sheets/blob/657c85c95697ed56ccaac4611ab25732fc021106/HarnMaster3/scroll-wide.png?raw=true" /> -->
-	<img class='avatarimage' name='attr_character_avatar'>
+	<img class='avatarimage' name='attr_character_avatar' alt="Character Avatar">
 </div>
 
 <!-- buttons to select desired tab -->
@@ -1296,6 +1296,7 @@
 			<div class="skill-section-title">ARMOR PROTECTION - LEGACY INFORMATION</div>
     		<div class="skill-label skill-header">Location</div>
     		<div class="skill-label skill-header">Compound Layers</div>
+			<div class="skill-value skill-header">AQ</div>
     		<div class="skill-value skill-header">B</div>
     		<div class="skill-value skill-header">E</div>
     		<div class="skill-value skill-header">P</div>
@@ -1303,6 +1304,7 @@
 			
 			<div class="skill-label skill-header">Location</div>
     		<div class="skill-label skill-header">Compound Layers</div>
+			<div class="skill-value skill-header">AQ</div>
     		<div class="skill-value skill-header">B</div>
     		<div class="skill-value skill-header">E</div>
     		<div class="skill-value skill-header">P</div>
@@ -1310,104 +1312,120 @@
 			
     		<label for=skull2>Skull</label>
     		<input id=skull2 type="text" name="attr_skull_layers" class="armor-label">
-    		<input type="number" name="attr_skull_b" class="skill-value" value="0" readonly>
+    		<input type="number" name="attr_skull_aq" class="skill-value" value="0" readonly>
+			<input type="number" name="attr_skull_b" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_skull_e" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_skull_p" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_skull_f" class="skill-value" value="0" readonly>
 			<label for=thorax2>Thorax</label>
     		<input id=thorax2 type="text" name="attr_thorax_layers" class="armor-label">
-    		<input type="number" name="attr_thorax_b" class="skill-value" value="0" readonly>
+    		<input type="number" name="attr_thorax_aq" class="skill-value" value="0" readonly>
+			<input type="number" name="attr_thorax_b" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_thorax_e" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_thorax_p" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_thorax_f" class="skill-value" value="0" readonly>
     
     		<label for=face2>Face</label>
     		<input id=face2 type="text" name="attr_face_layers" class="armor-label">
-    		<input type="number" name="attr_face_b" class="skill-value" value="0" readonly>
+    		<input type="number" name="attr_face_aq" class="skill-value" value="0" readonly>
+			<input type="number" name="attr_face_b" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_face_e" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_face_p" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_face_f" class="skill-value" value="0" readonly>
     		<label for=abdomen2>Abdomen</label>
     		<input id=abdomen2 type="text" name="attr_abdomen_layers" class="armor-label">
-    		<input type="number" name="attr_abdomen_b" class="skill-value" value="0" readonly>
+    		<input type="number" name="attr_abdomen_aq" class="skill-value" value="0" readonly>
+			<input type="number" name="attr_abdomen_b" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_abdomen_e" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_abdomen_p" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_abdomen_f" class="skill-value" value="0" readonly>
        
     		<label for=neck2>Neck</label>
     		<input id=neck2 type="text" name="attr_neck_layers" class="armor-label">
-    		<input type="number" name="attr_neck_b" class="skill-value" value="0" readonly>
+    		<input type="number" name="attr_neck_aq" class="skill-value" value="0" readonly>
+			<input type="number" name="attr_neck_b" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_neck_e" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_neck_p" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_neck_f" class="skill-value" value="0" readonly>
  			<label for=hip2>Hip</label>
     		<input id=hip2 type="text" name="attr_hip_layers" class="armor-label">
-    		<input type="number" name="attr_hip_b" class="skill-value" value="0" readonly>
+    		<input type="number" name="attr_hip_aq" class="skill-value" value="0" readonly>
+			<input type="number" name="attr_hip_b" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_hip_e" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_hip_p" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_hip_f" class="skill-value" value="0" readonly>
            
     		<label for=shoulder2>Shoulder</label>
     		<input id=shoulder2 type="text" name="attr_shoulder_layers" class="armor-label">
-    		<input type="number" name="attr_shoulder_b" class="skill-value" value="0" readonly>
+    		<input type="number" name="attr_shoulder_aq" class="skill-value" value="0" readonly>
+			<input type="number" name="attr_shoulder_b" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_shoulder_e" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_shoulder_p" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_shoulder_f" class="skill-value" value="0" readonly>
     		<label for=groin2>Groin</label>
     		<input id=groin2 type="text" name="attr_groin_layers" class="armor-label">
-    		<input type="number" name="attr_groin_b" class="skill-value" value="0" readonly>
+    		<input type="number" name="attr_groin_aq" class="skill-value" value="0" readonly>
+			<input type="number" name="attr_groin_b" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_groin_e" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_groin_p" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_groin_f" class="skill-value" value="0" readonly>
    
     		<label for=upperarm2>Upper Arm</label>
     		<input id=upperarm2 type="text" name="attr_upperarm_layers" class="armor-label">
-    		<input type="number" name="attr_upperarm_b" class="skill-value" value="0" readonly>
+    		<input type="number" name="attr_upperarm_aq" class="skill-value" value="0" readonly>
+			<input type="number" name="attr_upperarm_b" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_upperarm_e" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_upperarm_p" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_upperarm_f" class="skill-value" value="0" readonly>
     		<label for=thigh2>Thigh</label>
     		<input id=thigh2 type="text" name="attr_thigh_layers" class="armor-label">
-    		<input type="number" name="attr_thigh_b" class="skill-value" value="0" readonly>
+    		<input type="number" name="attr_thigh_aq" class="skill-value" value="0" readonly>
+			<input type="number" name="attr_thigh_b" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_thigh_e" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_thigh_p" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_thigh_f" class="skill-value" value="0" readonly>
     
     		<label for=elbow2>Elbow</label>
     		<input id=elbow2 type="text" name="attr_elbow_layers" class="armor-label">
-    		<input type="number" name="attr_elbow_b" class="skill-value" value="0" readonly>
+    		<input type="number" name="attr_elbow_aq" class="skill-value" value="0" readonly>
+			<input type="number" name="attr_elbow_b" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_elbow_e" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_elbow_p" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_elbow_f" class="skill-value" value="0" readonly>
      		<label for=knee2>Knee</label>
     		<input id=knee2 type="text" name="attr_knee_layers" class="armor-label">
-    		<input type="number" name="attr_knee_b" class="skill-value" value="0" readonly>
+    		<input type="number" name="attr_knee_aq" class="skill-value" value="0" readonly>
+			<input type="number" name="attr_knee_b" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_knee_e" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_knee_p" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_knee_f" class="skill-value" value="0" readonly>
    
     		<label for=forearm2>Forearm</label>
     		<input id=forearm2 type="text" name="attr_forearm_layers" class="armor-label">
-    		<input type="number" name="attr_forearm_b" class="skill-value" value="0" readonly>
+    		<input type="number" name="attr_forearm_aq" class="skill-value" value="0" readonly>
+			<input type="number" name="attr_forearm_b" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_forearm_e" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_forearm_p" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_forearm_f" class="skill-value" value="0" readonly>
       		<label for=calf2>Calf</label>
     		<input id=calf2 type="text" name="attr_calf_layers" class="armor-label">
-    		<input type="number" name="attr_calf_b" class="skill-value" value="0" readonly>
+    		<input type="number" name="attr_calf_aq" class="skill-value" value="0" readonly>
+			<input type="number" name="attr_calf_b" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_calf_e" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_calf_p" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_calf_f" class="skill-value" value="0" readonly>
     
     		<label for=hand2>Hand</label>
     		<input id=hand2 type="text" name="attr_hand_layers" class="armor-label">
-    		<input type="number" name="attr_hand_b" class="skill-value" value="0" readonly>
+    		<input type="number" name="attr_hand_aq" class="skill-value" value="0" readonly>
+			<input type="number" name="attr_hand_b" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_hand_e" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_hand_p" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_hand_f" class="skill-value" value="0" readonly>
     		<label for=foot2>Foot</label>
     		<input id=foot2 type="text" name="attr_foot_layers" class="armor-label">
-    		<input type="number" name="attr_foot_b" class="skill-value" value="0" readonly>
+    		<input type="number" name="attr_foot_aq" class="skill-value" value="0" readonly>
+			<input type="number" name="attr_foot_b" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_foot_e" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_foot_p" class="skill-value" value="0" readonly>
     		<input type="number" name="attr_foot_f" class="skill-value" value="0" readonly>		
@@ -1531,6 +1549,8 @@
 			<input id=showhorsetoggle name="attr_hrhorseonsheet" type="checkbox" value="1" checked>
 			<label for=showpietytoggle class="harntooltip" data-tooltiptext="When this is unchecked the sheet will show space for tracking piety per god with repeating rows" >Show consolidated piety?</label>
 			<input id=showpietytoggle name="attr_hrconsolidatedpiety" type="checkbox" value="1" checked>
+			<label for=showlegacyarmortoggle>Hide armor info from legacy (v1) sheet?</label>
+			<input id=showlegacyarmortoggle name="attr_legacyarmorhidden" type="checkbox" value="1">			
 			<div class="full-width skill-header">Sheet version</div>
 			<div class="full-width">
 			  <input name="attr_character_sheet_version" type="number" value="20210804" readonly>
@@ -1541,7 +1561,16 @@
 	<div class="changelog">
 		<h2>Changelog</h2>
 		<h3>20210804 - Version 2.3</h3>
-		<p>Add a header to the sheet inspired by the paper version of the character sheet and roll20's new ability to include the avatar image. Also added some more tooltips for clarification</p>
+		<details>
+			<summary class="changelog-summary">
+				<p class="changelog-summary">Add a header to the sheet inspired by the paper version of the character sheet and roll20's new ability to include the avatar image. Plus some minor tweaks and fixes:</p>
+			</summary>
+			<ul>
+				<li>Restored AQ (armour quality) information in legacy armour section</li>
+				<li>Added option in settings to unhide armor information from legacy (v1) sheet if it was accidentally hidden but still needed</li> 
+				<li>Added some more tooltips for clarification</li>
+			</ul>
+		</details>
 		<h3>20210803 - Version 2.2</h3>
 		<p>Small bugfix to address issue with drag-and-drop of roll buttons from repeating weapon section to macro quick bar</p>
 		<h3>20210802 - Version 2.1</h3>
@@ -2356,7 +2385,7 @@ locations.forEach(function (location) {
 }); <!-- end set armour values per location --> 
 
 
-<!-- AP totals per location , could be more elegant with loop, but complicated due to skull vs sk naming . Clean up when everyone has updated their char sheets with armor on inventory tab ; update 21-06-2021: renamed attributes, old info in previous attributes kept around for legacy sheets on inventory tab./-->
+<!-- AP totals per location , could be more elegant with loop. condense first via https://wiki.roll20.net/RepeatingSum#Multiplying_More_Than_One_Column -->
 on('change:repeating_armoritems remove:repeating_armoritems', function() {
 	repeatingSum('sk_b', 'armoritems',['armor_sk_bvalue', 'armor_loc_sk','armor_iscarried']);
 	repeatingSum('sk_e', 'armoritems',['armor_sk_evalue', 'armor_loc_sk','armor_iscarried']);
