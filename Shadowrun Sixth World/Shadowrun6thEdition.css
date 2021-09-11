@@ -2079,7 +2079,7 @@ h2[data-i18n='nuyen'], h3[data-i18n='nuyen'] {
   div.magic-defense {
     display: grid !important;
     width: 100% !important;
-    grid-template-columns: 1fr auto 3em auto 1fr !important; }
+    grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr !important; }
   div.armor-resists {
     display: grid !important;
     grid-template-columns: .2fr .2fr .2fr .2fr .2fr !important; }
@@ -2910,6 +2910,25 @@ div.contacts div.repitem div.itemcontrol button.repcontrol_del {
 
 
 
+<<<<<<< HEAD
+=======
+/* Misc Rolls */
+.rolls .pc-box .rolls-col .rolls-misc {
+  width: 100%;
+  grid-column-gap: 5px;
+  grid-row-gap: 2px;
+  grid-template-columns: 1fr 6em 12em 6em 1fr; }
+.rolls .pc-box .rolls-col .rolls-misc input[type="number"] {
+  width: 100%; }
+.rolls .pc-box .rolls-col .rolls-misc h1,
+.rolls .pc-box .rolls-col .rolls-misc h2 {
+  text-align: center;
+  grid-column: 1 / 6; }
+
+
+
+
+>>>>>>> Roll20-master
 /***** Options Section *****/
 .options .pc-box {
   min-height: 800px !important; }
@@ -3433,14 +3452,14 @@ input[name="attr_stats_toggle"][value="settings"] ~ .body .toggle-display {
   display: inline-grid;
   grid-column: 1 / 11 !important;
   grid-template-columns: 1fr 3em 3em 2em 2em 2em 2em 2em 1em 1em !important; }
-.npc .body div.weapon-melee div.repitem div.settings input[name='attr_close'],
-.npc .body div.weapon-melee div.repitem div.settings input[name='attr_near'],
-.npc .body div.weapon-melee div.repitem div.settings input[name='attr_medium'],
-.npc .body div.weapon-melee div.repitem div.settings input[name='attr_far'],
-.npc .body div.weapon-melee div.repitem div.settings input[name='attr_extreme'] {
+.npc .body div.weapon-melee div.repitem div.settings input[name='attr_close'], .npc .body div.weapon-melee div.repitem div.settings input[name='attr_close_base'],
+.npc .body div.weapon-melee div.repitem div.settings input[name='attr_near'], .npc .body div.weapon-melee div.repitem div.settings input[name='attr_near_base'],
+.npc .body div.weapon-melee div.repitem div.settings input[name='attr_medium'], .npc .body div.weapon-melee div.repitem div.settings input[name='attr_medium_base'],
+.npc .body div.weapon-melee div.repitem div.settings input[name='attr_far'], .npc .body div.weapon-melee div.repitem div.settings input[name='attr_far_base'],
+.npc .body div.weapon-melee div.repitem div.settings input[name='attr_extreme'], .npc .body div.weapon-melee div.repitem div.settings input[name='attr_extreme_base'] {
   width: 2em; }
-.npc .body div.weapon-melee div.repitem div.settings input[name='attr_dicepool'],
-.npc .body div.weapon-melee div.repitem div.settings input[name='attr_damage'] {
+.npc .body div.weapon-melee div.repitem div.settings input[name='attr_dicepool'], .npc .body div.weapon-melee div.repitem div.settings input[name='attr_dicepool_base'],
+.npc .body div.weapon-melee div.repitem div.settings input[name='attr_damage'], .npc .body div.weapon-melee div.repitem div.settings input[name='attr_damage_base'] {
   text-align: center;
   width: 3em; }
 
@@ -3495,14 +3514,14 @@ input[name="attr_stats_toggle"][value="settings"] ~ .body .toggle-display {
   display: inline-grid;
   grid-column: 1 / 13;
   grid-template-columns: 1fr 4em 4em 2em 2em 2em 2em 2em 5em 4em 1em 1em; }
-.npc .body div.weapon-range div.repitem div.settings input[name='attr_close'],
-.npc .body div.weapon-range div.repitem div.settings input[name='attr_near'],
-.npc .body div.weapon-range div.repitem div.settings input[name='attr_medium'],
-.npc .body div.weapon-range div.repitem div.settings input[name='attr_far'],
-.npc .body div.weapon-range div.repitem div.settings input[name='attr_extreme'] {
+.npc .body div.weapon-range div.repitem div.settings input[name='attr_close'], .npc .body div.weapon-range div.repitem div.settings input[name='attr_close_base'],
+.npc .body div.weapon-range div.repitem div.settings input[name='attr_near'], .npc .body div.weapon-range div.repitem div.settings input[name='attr_near_base'],
+.npc .body div.weapon-range div.repitem div.settings input[name='attr_medium'], .npc .body div.weapon-range div.repitem div.settings input[name='attr_medium_base'],
+.npc .body div.weapon-range div.repitem div.settings input[name='attr_far'], .npc .body div.weapon-range div.repitem div.settings input[name='attr_far_base'],
+.npc .body div.weapon-range div.repitem div.settings input[name='attr_extreme'], .npc .body div.weapon-range div.repitem div.settings input[name='attr_extreme_base'] {
   width: 2em; }
-.npc .body div.weapon-range div.repitem div.settings input[name='attr_dicepool'],
-.npc .body div.weapon-range div.repitem div.settings input[name='attr_damage'] {
+.npc .body div.weapon-range div.repitem div.settings input[name='attr_dicepool'], .npc .body div.weapon-range div.repitem div.settings input[name='attr_dicepool_base'],
+.npc .body div.weapon-range div.repitem div.settings input[name='attr_damage'], .npc .body div.weapon-range div.repitem div.settings input[name='attr_damage_base'] {
   width: 4em; }
 .npc .body div.weapon-range div.repitem div.settings input[name='attr_firing_modes'] {
   width: 13em; }
@@ -4039,9 +4058,27 @@ input[name='attr_weapon_range'][value='melee'] ~ span {
 .tab-switch[value='quality'] ~ .quality, .tab-switch[value='martial'] ~ .martial {
   display: inline !important; }
 
+<<<<<<< HEAD
 .pc h2, .pc h3, .pc .tabs, .pc div.skill-box div.row-long, .npc div.tabs, .npc div.mid, input[name='attr_sheet_type'][value='grunt'] ~ .npc .attribute.grunt, input[name='attr_sheet_type'][value='spirit'] ~ .npc .spirit:not(.settings), input[name='attr_sheet_type'][value='host'] ~ .npc .attribute.host, input[name='attr_sheet_type'][value='sprite'] ~ .npc .attribute.sprite, input[name='attr_sheet_type'][value='vehicle'] ~ .npc .attribute.vehicle {
   display: inline-grid !important; }
 
+=======
+.pc h2, 
+.pc h3, 
+.pc .tabs, 
+.pc div.skill-box div.row-long, 
+.npc div.tabs, 
+.npc div.mid, 
+input[name='attr_sheet_type'][value='grunt'] ~ .npc .attribute.grunt, 
+input[name='attr_sheet_type'][value='spirit'] ~ .npc .spirit:not(.settings), 
+input[name='attr_sheet_type'][value='host'] ~ .npc .attribute.host, 
+input[name='attr_sheet_type'][value='sprite'] ~ .npc .attribute.sprite, 
+input[name='attr_sheet_type'][value='vehicle'] ~ .npc .attribute.vehicle {
+  display: inline-grid !important; }
+input.tab-switch[value='matrix'] ~ .rolls-matrix,
+input.tab-switch[value='misc'] ~ .rolls-misc {
+  display: grid !important; }
+>>>>>>> Roll20-master
 .pictos, .settings-toggle input[type='checkbox'] + span,
 .settings-flag input[type='checkbox'] + span, .flag-primary + div > span, .cc-row button[name*='shots'], .cc-row button[name='act_reload'], .cc-row button[name='act_primary_ammo'], .repcontrol .repcontrol_edit:after,
 .repcontrol .repcontrol_add:after, .itemcontrol .repcontrol_del {
@@ -4389,6 +4426,7 @@ div.footer img {
 .sheet-rolltemplate-quality .sheet-template-desc,
 .sheet-rolltemplate-rolls .sheet-template-desc,
 .sheet-rolltemplate-contact .sheet-template-desc {
+  white-space: normal;
   font-size: 0.8em !important; }
 
 .sheet-rolltemplate-multirow span.sheet-template-desc .inlinerollresult,

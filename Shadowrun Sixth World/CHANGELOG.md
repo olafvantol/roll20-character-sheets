@@ -1,6 +1,40 @@
 Change Log
 ==============================================
+<<<<<<< HEAD
 **2021-06-07 ** v.35 Chuz (James Culp)
+=======
+**2021-09-08 ** v.41 Chuz (James Culp)
+	Bugfix - Drone/Vehicle Initiative should have been normal Initiative but Pilot * 2 + 4d6.
+	Bugfix - Grunt template was applying wounds to Soak rolls.
+	Added IC to the list of pastable raw data
+	Host->IC now display notes in the roll template	
+**2021-08-31 ** v.40 Chuz (James Culp)
+	Added Social Rating to derived tests (even though it's not a test) just to the right of the Edge Attribute.  This is a total of Charisma + any cumulative + primary armor social adjustments.
+	Added mouseovers for Composure, Judge Intentions, Memory and Lift & Carry buttons detailing where the values come from for those of us that forget.
+	Added the ability to add Spells, NPC Spells, Qualities and Augmentations by pasting raw data into the Notes textarea for a new repeating row.
+**2021-07-19 ** v.39 Chuz (James Culp)
+	Added Grunt Groups and Autocalculations based on the # of grunts
+	Bugfix - PC->Rolls tab was showing conversions on the Matrix Actions Tab
+**2021-07-12 ** v.38 Chuz (James Culp)
+	Bugfix - NPC->Grunt fixed a bug or oversight on grunt repeating skills.   They were all showing Agility on the roll template as their ability.  Upon first opening a grunt sheet all repeating skills for the grunt will be re-set to use their default associated attribute and the display attribute will also be fixed.
+	Bugfix - NPC->Host IC dice roll buttons weren't working.
+	Bugfix - PC->Rolls->Misc fixed width on conversions
+**2021-07-05 ** v.37 Chuz (James Culp)
+	Rolls->Misc tab added and now contains a way to do quick and dirty conversions for Standard to Metric and vice versa.  Feet <=> Meters, Pounds <=> Kilograms, and Miles <=> Kilometers.
+	PC->Arms->Range/Melee Added "Engineering" option to the skill dropdown.
+	Bugfix - PC->Arms->Range/Melee fixed the dicepool display to now reflect the actual dicepool.  To make sure this is up to date when viewing a character sheet for the first time after this version goes live just toggle settings mode off/on or on/off for each weapon, that should trigger the update and update your primary displays as well.
+	Added some behind the scenes code to try and update the weapons to have the Attribute, Attribute Rating and Dicepool Modifier attributes set correctly after loading.  Also added versioning for the character sheet data.
+	NPC Astral Initiative now auto-calculates for spirits and awakened grunts	NPC->Vehicle/Drone fixed hot sim initiative auto-calculation (now pilot * 2 + 4d6)
+	NPC->Grunt fixed sprint speed being 0 by default
+	PC Sheet -> Condition Modifiers box - added Natural Healing Physical and Stun buttons.  Currently do not update player's CM.
+**2021-06-21 ** v.36 Chuz (James Culp)
+	PC Sheet Modifiers text boxes in various places in the sheet (Qualities, Augs, Gear, Matrix Devices, Programs, and Echos) now allow the player to add/subtract from attributes on the sheet.  See roll20 forum thread for further details.
+	PC Sheet Removed Modifications from sprites.
+	PC Sheets Added functionality so when firing mode is changed on the Core tab, the DV and AR are updated appropriately.  Still doesn't split dice pools.
+	Added combat_paralysis flag that will automatically divide the PC's initiative roll in half, rounded up until there is further guidance from Catalyst.  It does not move them to the last  slot for the first round of combat however.
+**2021-06-03 ** v.35 Chuz (James Culp)
+	PC->Magic->Meta tab, added alternative Tradition attributes to the drop down.
+>>>>>>> Roll20-master
 	Added Matrix AR and Matrix DR to Host sheet
 **2021-05-25 ** v.34 Chuz (James Culp)
 	Bugfix - Changed HTML top display the nuyen symbol instead of translations as the character was breaking the translation stuff
