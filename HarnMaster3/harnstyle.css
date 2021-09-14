@@ -1310,3 +1310,76 @@ button.dismissnotification {
   text-align: center;
 }
 
+
+/* MOBILE screen styling */
+
+@media only screen and (max-width: 480px), only screen and (orientation: portrait) {
+	
+.characterviewer {
+	/* color: var(--tcd-light); */
+	background-color: #f7f7f7;
+	background-image: none; 
+	font-size: 32px;
+}
+	
+.tab-buttons {
+	/* float: right; */
+	position: -webkit-sticky;
+	position: sticky;
+	top: 100px;
+	z-index:1000;
+	padding: 10px;
+	width: fit-content;
+	/* margin-right: 2em;  prevent overlap with edit button */
+}
+
+.tab-buttons > button {
+
+  padding: 25px 15px; /* 15px padding */
+  width: 240px; /* Set a specific width */
+  font-size: 24px; /* Increase font size */
+  /* color: white; White text color */
+  position: static; /* on-hover buttons on the left don't work for mobile */
+  transition: 0;
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+  background-color: #fff5aa;
+  text-align: right;
+  border-color: #CCC;  
+}
+
+/* fix tab header position with buttons on top in mobile view */
+h2.tab-header {
+    margin-top: -180px;
+}
+
+h1.tab-header {
+    padding-bottom: 110px;
+}
+
+/* grid adjustments for mobile view */
+
+.personal {
+  grid-column-start: 1;
+  grid-column-end: 13;
+}
+
+.attribs {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row: 3;  
+}
+
+.family {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row: 4;
+}
+
+.physical {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row: 2;
+}
+
+}
+	
