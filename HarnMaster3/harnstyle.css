@@ -1324,3 +1324,50 @@ button.dismissnotification {
   text-align: center;
 }
 
+/*----------------- MOBILE VIEW for phones and roll20 app ------------------*/
+
+@media only screen and (max-width: 380px) {
+	
+/* remove hover and fold-out from tab buttons */ 	
+.tab-buttons {
+	/* float: right; */
+	position: relative;
+	padding: 10px;
+	width: fit-content;
+	/* margin-right: 2em;  prevent overlap with edit button */
+}
+
+.tab-buttons > button {
+  position: fixed; /* Position them relative to the browser window */
+  padding: 15px 5px; /* 15px padding */
+  width: 130px; /* Set a specific width */
+  font-size: 26px; /* Increase font size */
+  /* color: white; White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+  background-color: #afaaff;
+  text-align: right;
+  border-color: #CCC;
+}
+
+.personal {
+  grid-column-start: 1;
+  grid-column-end: 13;
+}
+
+.attribs {
+  grid-column-start: 1;
+  grid-column-end: 13;
+}
+
+.family {
+  grid-column-start: 1;
+  grid-column-end: 13;
+}
+
+.physical {
+  grid-column-start: 1;
+  grid-column-end: 13;
+}
+
+	
+}
