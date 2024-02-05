@@ -2560,7 +2560,7 @@ on('change:repeating_armoritems remove:repeating_armoritems', function() {
                 let load_armor_total = 0;
                 id_array.forEach(id => {
                     const equipped = int(values[section_name(section, id, 'armor_iscarried')]);
-                    load_armor_total += (equipped * parseFloat(values[section_name(section, id, 'armor_wgt')]));
+                    load_armor_total += (equipped * (parseFloat(values[section_name(section, id, 'armor_wgt')]) || 0));
                 });
                 
                 output['load_armor_total'] = load_armor_total;
